@@ -21,10 +21,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R                   &kp T                 &kp Y        &kp U      &kp I                            &kp O    &kp P            &kp BACKSLASH
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F                   &kp G                 &kp H        &kp J      &kp K                            &kp L    &lt 2 SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V                   &kp B                 &kp N        &kp M      &kp COMMA                        &kp DOT  &kp FSLH         &kp RSHIFT
-                         &mo 3  &mt LEFT_GUI BACKSPACE  &mt LEFT_SHIFT ESC    &lt 1 ENTER  &kp SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
+&kp Y  &kp Q  &kp W  &kp E  &kp R                   &kp T                 &kp Y        &kp U      &kp I                            &kp O    &kp P            &kp T
+&kp H  &kp A  &kp S  &kp D  &kp F                   &kp G                 &kp H        &kp J      &kp K                            &kp L    &lt 2 SEMICOLON  &kp G
+&kp N  &kp Z  &kp X  &kp C  &kp V                   &kp B                 &kp N        &kp M      &kp COMMA                        &kp DOT  &kp FSLH         &kp B
+                     &mo 3  &mt LEFT_GUI BACKSPACE  &mt LEFT_SHIFT ESC    &lt 1 ENTER  &kp SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
             >;
         };
 
@@ -60,10 +60,10 @@
 
         firmware {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &sys_reset      &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans          &trans  &trans  &trans  &trans  &trans
-                                    &trans        &sys_reset    &bt BT_CLR      &bt BT_CLR_ALL  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &sys_reset      &trans       &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &trans       &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans          &trans       &trans  &trans  &trans  &trans
+                                    &trans        &sys_reset    &bt BT_CLR      &bt BT_CLR_ALL  &bootloader  &trans
             >;
         };
     };
