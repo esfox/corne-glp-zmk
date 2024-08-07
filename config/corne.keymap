@@ -33,10 +33,10 @@
 
         nav {
             bindings = <
-&trans  &mkp RCLK  &msc SCROLL_LEFT  &mmv MOVE_UP    &msc SCROLL_RIGHT  &mkp MCLK           &kp SYSREQ  &kp HOME        &kp ASTRK      &kp END             &trans  &trans
-&trans  &trans     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCROLL_UP      &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &trans  &trans
-&trans  &trans     &kp LCTRL         &kp LSHIFT      &kp LEFT_ALT       &msc SCROLL_DOWN    &kp DEL     &kp PG_UP       &kp PAGE_DOWN  &kp K_CONTEXT_MENU  &trans  &trans
-                                     &trans          &trans             &kp SPACE           &kp RET     &trans          &kp RALT
+&trans  &mkp RCLK  &trans     &trans      &trans        &mkp MCLK    &kp SYSREQ  &kp HOME        &kp ASTRK      &kp END             &trans  &trans
+&trans  &trans     &trans     &trans      &trans        &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &trans  &trans
+&trans  &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &trans       &kp DEL     &kp PG_UP       &kp PAGE_DOWN  &kp K_CONTEXT_MENU  &trans  &trans
+                              &trans      &trans        &kp SPACE    &kp RET     &trans          &kp RALT
             >;
         };
 
