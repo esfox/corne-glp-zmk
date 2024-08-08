@@ -28,7 +28,7 @@
 
         symbols {
             bindings = <
-&kp TAB     &kp CARET     &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT     &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp MINUS  &kp PLUS         &trans
+&kp TAB     &kp CARET     &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT     &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp MINUS  &kp PLUS         &trans
 &bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp N5          &kp NUMBER_6   &kp N7            &kp N8             &kp N9     &kp N0           &kp UNDER
 &kp LSHFT   &kp GRAVE     &kp TILDE     &kp HASH              &kp DOLLAR             &kp ASTERISK    &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &kp EXCLAMATION  &kp QUESTION
                                         &trans                &trans                 &kp SPACE       &kp RET        &trans            &kp RALT
