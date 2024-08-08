@@ -14,6 +14,15 @@
 &mt { tapping-term-ms = <100>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        caps_lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <24 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,25 +40,25 @@
 &kp TAB     &kp CARET     &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT     &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp MINUS  &kp PLUS         &trans
 &bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp N5          &kp NUMBER_6   &kp N7            &kp N8             &kp N9     &kp N0           &kp UNDER
 &kp LSHFT   &kp GRAVE     &kp TILDE     &kp HASH              &kp DOLLAR             &kp ASTERISK    &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &kp EXCLAMATION  &kp QUESTION
-                                        &trans                &trans                 &kp SPACE       &kp RET        &trans            &kp RALT
+                                        &trans                &trans                 &trans          &trans         &trans            &trans
             >;
         };
 
         nav {
             bindings = <
-&trans     &mkp RCLK  &trans     &trans      &trans           &mkp MCLK    &kp SYSREQ  &kp HOME        &kp ASTRK     &kp END             &trans  &trans
-&kp LCTRL  &trans     &trans     &trans      &trans           &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
-&trans     &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT     &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
-                                 &trans      &kp RIGHT_SHIFT  &kp SPACE    &kp RET     &trans          &kp RALT
+&trans     &mkp RCLK  &trans     &trans      &trans        &mkp MCLK    &kp SYSREQ  &kp HOME        &kp ASTRK     &kp END             &trans  &trans
+&kp LCTRL  &trans     &trans     &trans      &trans        &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
+&trans     &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
+                                 &trans      &trans        &trans       &trans      &trans          &trans
             >;
         };
 
         firmware {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &sys_reset      &trans       &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &trans       &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans          &trans       &trans  &trans  &trans  &trans
-                                    &trans        &bootloader   &bt BT_CLR      &bt BT_CLR_ALL  &bootloader  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &sys_reset      &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans          &trans  &trans  &trans  &trans  &trans
+                                    &trans        &bootloader   &bt BT_CLR      &bt BT_CLR_ALL  &trans  &trans
             >;
         };
     };
