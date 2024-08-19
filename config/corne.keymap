@@ -23,33 +23,44 @@
         };
     };
 
+    behaviors {
+        caps_lock: caps_lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPS_LOCK";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         main {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E              &kp R                   &kp T                 &kp Y        &kp U      &kp I                            &kp O    &kp P            &kp BACKSLASH
-&kp LCTRL  &kp A  &kp S  &kp D              &kp F                   &kp G                 &kp H        &kp J      &kp K                            &kp L    &lt 2 SEMICOLON  &kp SQT
-&mo 3      &kp Z  &kp X  &kp C              &kp V                   &kp B                 &kp N        &kp M      &kp COMMA                        &kp DOT  &kp FSLH         &trans
-                         &kp LS(LA(LCTRL))  &mt LEFT_GUI BACKSPACE  &mt LEFT_SHIFT ESC    &lt 1 ENTER  &kp SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
+&kp TAB     &kp Q  &kp W  &kp E              &kp R                   &kp T        &kp Y                 &kp U      &kp I                            &kp O    &kp P            &kp BACKSLASH
+&kp LCTRL   &kp A  &kp S  &kp D              &kp F                   &kp G        &kp H                 &kp J      &kp K                            &kp L    &lt 2 SEMICOLON  &kp SQT
+&caps_lock  &kp Z  &kp X  &kp C              &kp V                   &kp B        &kp N                 &kp M      &kp COMMA                        &kp DOT  &kp FSLH         &mo 3
+                          &kp LS(LA(LCTRL))  &mt LEFT_GUI BACKSPACE  &lt 1 ESC    &mt LEFT_SHIFT ENTER  &kp SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
             >;
         };
 
-        symbols {
+        numsym {
             bindings = <
-&kp TAB     &kp CARET     &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT     &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp MINUS  &kp PLUS         &trans
-&bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp N5          &kp NUMBER_6   &kp N7            &kp N8             &kp N9     &kp N0           &kp UNDER
-&kp LSHFT   &kp GRAVE     &kp TILDE     &kp HASH              &kp DOLLAR             &kp ASTERISK    &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &kp EXCLAMATION  &kp QUESTION
-                                        &trans                &trans                 &trans          &trans         &trans            &trans
+&kp TAB     &kp GRAVE     &kp CARET         &kp EQUAL       &kp DOLLAR            &kp PERCENT     &kp AT         &kp PLUS               &kp MINUS        &kp TILDE          &trans           &trans
+&bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp N5          &kp NUMBER_6   &kp N7                 &kp N8           &kp N9             &kp N0           &kp UNDER
+&kp LSHFT   &kp HASH      &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK    &kp AMPERSAND  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp QUESTION
+                                            &trans          &trans                &trans          &kp LS(ENTER)  &trans                 &trans
             >;
         };
 
         nav {
             bindings = <
-&trans     &mkp RCLK  &trans     &trans      &trans        &mkp MCLK    &kp SYSREQ  &kp HOME        &kp ASTRK     &kp END             &trans  &trans
-&kp LCTRL  &trans     &trans     &trans      &trans        &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
-&trans     &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
-                                 &trans      &trans        &trans       &trans      &trans          &trans
+&trans  &mkp RCLK  &trans     &trans      &trans        &mkp MCLK    &kp SYSREQ  &kp HOME        &trans        &kp END             &trans  &trans
+&trans  &trans     &trans     &trans      &trans        &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
+&trans  &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
+                              &trans      &trans        &trans       &trans      &trans          &trans
             >;
         };
 
