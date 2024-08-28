@@ -48,10 +48,10 @@
 
         numsym {
             bindings = <
-&trans  &kp GRAVE     &kp LBKT      &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp PERCENT     &kp AT         &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans           &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4    &kp N5          &kp NUMBER_6   &kp N7           &kp N8                 &kp N9             &kp N0           &kp UNDER
-&trans  &kp HASH      &kp CARET     &kp EQUAL             &kp DOLLAR      &kp ASTERISK    &kp AMPERSAND  &kp PLUS         &kp MINUS              &kp TILDE          &kp EXCLAMATION  &kp QUESTION
-                                    &trans                &trans          &trans          &kp LS(ENTER)  &trans           &trans
+&trans  &kp GRAVE     &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT     &kp AT         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp N5          &kp NUMBER_6   &kp N7          &kp N8           &kp N9            &kp N0             &kp UNDER
+&trans  &kp CARET     &kp TILDE     &kp HASH              &kp DOLLAR             &kp ASTERISK    &kp AMPERSAND  &kp PLUS        &kp MINUS        &trans            &kp EXCLAMATION    &kp QUESTION
+                                    &trans                &trans                 &trans          &kp LS(ENTER)  &trans          &trans
             >;
         };
 
